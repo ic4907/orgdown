@@ -40,3 +40,12 @@ jobs:
 
       - store_artifacts:
                 path: dist
+
+  release:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node
+
+    steps:
+      - checkout
+      - run: yarn dist
