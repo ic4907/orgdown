@@ -52,3 +52,11 @@ jobs:
 
       - store_artifacts:
                 path: dist/mac
+
+
+workflows:
+  version: 2
+  build_and_release:
+    jobs:
+      - build
+      - release
