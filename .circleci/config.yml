@@ -49,3 +49,6 @@ jobs:
     steps:
       - checkout
       - run: yarn dist
+
+      - store_artifacts:
+                path: dist/mac
