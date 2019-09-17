@@ -1,8 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
+import Notebook from './views/Notebook';
+
+import './styles.scss';
 
 ReactDOM.render(
-  <p>hello orgdown</p>,
+  <Notebook />,
   document.getElementById("root")
 );

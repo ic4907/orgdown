@@ -1,0 +1,21 @@
+.notebook {
+  height: 100%;
+  display: flex;
+
+  .sidebar {
+    width: 250px;
+    background: rgb(28, 33, 42);
+    padding: 10px 0px;
+
+    color: #fff;
+  }
+
+  .documents {
+    width: 300px;
+    background: rgb(251, 251, 251);
+  }
+
+  .editor {
+    flex: 1;
+  }
+}
