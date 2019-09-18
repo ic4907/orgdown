@@ -32,3 +32,8 @@ yarn start:dev
 #+BEGIN_SRC 
 yarn start
 #+END_SRC
+
+* Release
+#+BEGIN_SRC sh
+yarn dist
+#+END_SRC

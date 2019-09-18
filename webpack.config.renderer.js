@@ -19,7 +19,11 @@ module.exports = {
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".jsx"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    
+    alias: {
+      '@components': path.resolve(__dirname, 'src/renderer/components/')
+    }
   },
 
   module: {
