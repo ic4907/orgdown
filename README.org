@@ -1,5 +1,7 @@
 * orgdown - 专注好用的知识管理工具
-[[https://circleci.com/gh/ic4907/orgdown.svg?style=svg]]
+[[
+https://circleci.com/gh/ic4907/orgdown.svg?style=svg]]
+
 #+BEGIN_QUOTE
 来自emacs org mode 与 markdown 的结合产品: org + down
 #+END_QUOTE
@@ -16,17 +18,18 @@
 # Build
 环境要求：
 NodeJS > 8.6
-```sh
+
+#+BEGIN_SRC sh
 yarn build
-```
+#+END_SRC
 
-# Run
-## development mode
-```sh
+* Run
+** development mode
+#+BEGIN_SRC sh
 yarn start:dev
-```
+#+END_SRC
 
-## production mode
-```sh
+** production mode
+#+BEGIN_SRC 
 yarn start
-```
+#+END_SRC
