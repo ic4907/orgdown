@@ -1,6 +1,5 @@
 * orgdown - 专注好用的知识管理工具
-[[
-https://circleci.com/gh/ic4907/orgdown.svg?style=svg]]
+[[https://circleci.com/gh/ic4907/orgdown.svg?style=svg]]
 
 #+BEGIN_QUOTE
 来自emacs org mode 与 markdown 的结合产品: org + down
