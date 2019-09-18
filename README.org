@@ -14,7 +14,7 @@
    - Typescript
    - Electron
 
-# Build
+* Build
 环境要求：
 NodeJS > 8.6
 
