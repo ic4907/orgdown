@@ -13,3 +13,20 @@
    - Typescript
    - Electron
 
+# Build
+环境要求：
+NodeJS > 8.6
+```sh
+yarn build
+```
+
+# Run
+## development mode
+```sh
+yarn start:dev
+```
+
+## production mode
+```sh
+yarn start
+```
