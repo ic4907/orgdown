@@ -38,7 +38,5 @@ jobs:
       # run build!
       - run: yarn build
 
-      - run: yarn dist
-
-      - store_artifacts:
-                path: dist/mac
+      # - store_artifacts:
+      #           path: dist
