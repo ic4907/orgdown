@@ -6,10 +6,13 @@
 #+END_QUOTE
 
 ** Features
-   
+
+*** Screenshot
+[[./docs/screenshots/screenshot-01.jpg]]
+
 ** Tech Stack
    orgdown 是一个使用electron及typescript编写的跨平台应用
-   
+
    - ReactJS
    - Typescript
    - Electron
@@ -29,7 +32,7 @@ yarn start:dev
 #+END_SRC
 
 ** production mode
-#+BEGIN_SRC 
+#+BEGIN_SRC
 yarn start
 #+END_SRC
 

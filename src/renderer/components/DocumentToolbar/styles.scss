@@ -1,0 +1,18 @@
+.toolbar-items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  &.first-items {
+    flex: 1;
+  }
+
+  .toolbar-item {
+    padding: 5px 6px;
+    border: 1px solid #fff;
+
+    &:hover {
+      border: 1px solid #eee;
+    }
+  }
+}

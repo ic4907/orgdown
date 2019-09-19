@@ -1,7 +1,9 @@
-@import '~normalize.css';
+@import "~normalize.css";
 
-html, body, #root  {
+html,
+body,
+#root {
   height: 100%;
-  font-family:   PingFangSC, PingFangSC-Regular, 'Microsoft YaHei', 微软雅黑,
-    STXihei, 华文细黑, Georgia, 'Times New Roman', serif;
+  font-family: PingFangSC, PingFangSC-Regular, "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, Georgia,
+    "Times New Roman", serif;
 }

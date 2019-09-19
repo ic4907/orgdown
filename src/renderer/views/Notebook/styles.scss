@@ -5,17 +5,61 @@
   .sidebar {
     width: 250px;
     background: rgb(28, 33, 42);
-    padding: 10px 0px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 
-    color: #fff;
+    color: rgb(171, 172, 174);
+
+    .book-navigator {
+      flex: 1;
+    }
+
+    .user {
+      background: #000;
+      height: 60px;
+      align-items: center;
+      display: flex;
+    }
   }
 
   .documents {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     background: rgb(251, 251, 251);
   }
 
-  .editor {
+  .workbench {
     flex: 1;
+    display: flex;
+
+    .editor {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .document-title-editor {
+        height: 40px;
+        padding: 0 10px;
+      }
+
+      .document-toolbar {
+        height: 40px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .document-editor {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+
+    .editor-sidebar {
+      width: 50px;
+      border-left: 1px solid #eee;
+    }
   }
 }
