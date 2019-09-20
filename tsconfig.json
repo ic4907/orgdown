@@ -8,8 +8,8 @@
     "target": "es6",
     "jsx": "react",
     "paths": {
-      "@components": [
-        "src/renderer/components"
+      "@components/*": [
+        "src/renderer/components/*"
       ]
     }
   }

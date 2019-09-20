@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: "development",
@@ -50,11 +51,14 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+            },
+          },
           'css-loader',
-          // Compiles Sass to CSS
+          // 'postcss-loader',
           'sass-loader',
         ],
       }
@@ -64,6 +68,13 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./public/index.html",
       inject: true
+    }),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
   devServer: {
