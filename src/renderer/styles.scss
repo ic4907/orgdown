@@ -7,3 +7,20 @@ body,
   font-family: PingFangSC, PingFangSC-Regular, "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, Georgia,
     "Times New Roman", serif;
 }
+
+.scroll {
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #eee;
+    // -webkit-box-shadow: inset 0 0 6px #222;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1c212a;
+    // -webkit-box-shadow: inset 0 0 6px #000;
+  }
+}

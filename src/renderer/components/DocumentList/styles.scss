@@ -10,6 +10,10 @@
     &.active {
       background: rgb(65, 118, 255);
       color: #fff;
+
+      .note-content {
+        color: #eee;
+      }
     }
 
     &:last-child {
