@@ -1,6 +1,9 @@
 import RxDB from 'rxdb';
 import { app, BrowserWindow } from 'electron';
 
+app.setName('Orgdown');
+
+
 const dataPath = app.getPath('userData')
 
 RxDB.plugin(require('pouchdb-adapter-leveldb'));
@@ -14,6 +17,7 @@ const db = RxDB.create({
 function createWindow() {
   // 创建浏览器窗口
   let win = new BrowserWindow({
+    title: 'oRgdown',
     width: 1400,
     height: 1000,
     webPreferences: {
