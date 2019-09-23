@@ -1,6 +1,15 @@
-const electron = require('electron')
+import RxDB from 'rxdb';
+import { app, BrowserWindow } from 'electron';
 
-const { app, BrowserWindow } = require('electron')
+const dataPath = app.getPath('userData')
+
+RxDB.plugin(require('pouchdb-adapter-leveldb'));
+const leveldown = require('leveldown');
+
+const db = RxDB.create({
+  name: `${dataPath}/data/orgdown`,
+  adapter: leveldown
+});
 
 function createWindow() {
   // 创建浏览器窗口

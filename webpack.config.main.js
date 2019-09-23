@@ -14,7 +14,7 @@ module.exports = {
     extensions: [".ts", ".js"],
   },
   node: {
-    __dirname: false,
+    __dirname: true,
     __filename: false
   },
   module: {
