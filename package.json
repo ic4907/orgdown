@@ -55,6 +55,7 @@
     "leveldown": "^5.2.1",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
+    "pouchdb-adapter-http": "^7.1.1",
     "pouchdb-adapter-leveldb": "^7.1.1",
     "react": "^16.9.0",
     "react-codemirror2": "^6.0.0",
