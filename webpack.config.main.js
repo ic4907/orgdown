@@ -12,6 +12,9 @@ module.exports = {
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".js"],
+    alias: {
+      '@orgdown': path.resolve(__dirname, 'src/*')
+    }
   },
   node: {
     __dirname: true,

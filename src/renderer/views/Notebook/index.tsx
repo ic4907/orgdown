@@ -1,18 +1,18 @@
 import * as React from 'react';
 import * as Icon from 'react-feather';
 
-import BookNavigator from '@components/BookNavigator';
-import DocumentList from '@components/DocumentList';
-import DocumentSearchBox from '@components/DocumentSearchBox';
-import NotebookToolbox from '@components/NotebookToolbox';
-import NotebookTreeItem from '@components/BookNavigator/NotebookTreeItem';
+import BookNavigator from '@orgdown/components/BookNavigator';
+import DocumentList from '@orgdown/components/DocumentList';
+import DocumentSearchBox from '@orgdown/components/DocumentSearchBox';
+import NotebookToolbox from '@orgdown/components/NotebookToolbox';
+import NotebookTreeItem from '@orgdown/components/BookNavigator/NotebookTreeItem';
 
 import './styles.scss';
-import DocumentTitleEditor from '@components/DocumentTitleEditor';
-import DocumentToolbar from '@components/DocumentToolbar';
-import DocumentEditor from '@components/DocumentEditor';
-import DocumentSidebar from '@components/DocumentSidebar';
-import UserInfo from '@components/UserInfo';
+import DocumentTitleEditor from '@orgdown/components/DocumentTitleEditor';
+import DocumentToolbar from '@orgdown/components/DocumentToolbar';
+import DocumentEditor from '@orgdown/components/DocumentEditor';
+import DocumentSidebar from '@orgdown/components/DocumentSidebar';
+import UserInfo from '@orgdown/components/UserInfo';
 
 class Notebook extends React.Component {
 

@@ -8,7 +8,6 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "electron-rebuild",
-    "prestart": "yarn build",
     "start": "electron .",
     "start:dev": "NODE_ENV=development npm-run-all --parallel build:main build:render:hot start",
     "build:main": "webpack --config webpack.config.main.js",

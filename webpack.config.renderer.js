@@ -23,7 +23,8 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
     
     alias: {
-      '@components': path.resolve(__dirname, 'src/renderer/components/')
+      '@orgdown/components': path.resolve(__dirname, 'src/renderer/components/'),
+      '@orgdown/*': path.resolve(__dirname, 'src/*')
     }
   },
 
