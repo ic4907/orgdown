@@ -1,13 +1,13 @@
-import AuthModules from './auth';
+import OrgdownModule from './module';
 
-export interface OrgdownModule {
-    init(): void;
+import OrgdownUiModule from './ui';
+import OrgdownUserModule from "./user";
 
-    registerEvent(): void;
-}
 
-const auth = new AuthModules();
 
-export function initModules() {
-    auth.init();
-}
+const modules: Array<OrgdownModule> = [
+    new OrgdownUiModule(),
+    new OrgdownUserModule(),
+]
+
+export default modules;

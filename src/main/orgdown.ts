@@ -1,43 +1,26 @@
-import { EventEmitter } from "events";
-import { fromEvent } from "rxjs";
+import modules from './modules';
 
-import { initModules } from './modules';
-import { startup } from "./gui";
-import { OrgdownConfig } from "@orgdown/config";
+import OrgdownEventBus from './event-bus';
+import * as Store from 'electron-store';
 
+class OrgdownApplication {
 
-class OrgdownApplication extends EventEmitter {
+    public config: Store;
+    public eventBus: OrgdownEventBus;
 
-    config: OrgdownConfig;
-
-    initGui() {
-        startup();
+    private registerModules(config: Store, eventBus: OrgdownEventBus) {
+        modules.forEach(module => {
+            const moduleConfig = config.get(module.getName(), {});
+            module.init(moduleConfig, eventBus);
+            module.registe();
+        })
     }
 
-    loadPlugins() {
-        console.log(this.config);
-    }
-
-    loadModules() {
-        initModules()
-    }
-
-    initEventBus() {
-        fromEvent(this, 'orgdown.app:start')
-            .subscribe(() => {
-                this.initGui();
-            })
-    }
-
-    constructor(config: any) {
-        super();
+    constructor(config: Store) {
         this.config = config;
+        this.eventBus = new OrgdownEventBus();
 
-        this.loadModules();
-        this.loadPlugins();
-        this.initEventBus();
-
-
+        this.registerModules(this.config, this.eventBus);
     }
 
 }

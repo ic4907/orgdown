@@ -13,7 +13,7 @@ module.exports = {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".js"],
     alias: {
-      '@orgdown': path.resolve(__dirname, 'src/*')
+      '@orgdown': path.resolve(__dirname, 'src/')
     }
   },
   node: {
